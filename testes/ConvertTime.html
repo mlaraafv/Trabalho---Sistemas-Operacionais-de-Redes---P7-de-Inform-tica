@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Conversão de Medidas</title>
+</head>
+<body>
+    <h1>Conversões possíveis para Tempo:</h1>
+    <style>
+        table, th, td {
+          border: 1px solid rgb(2, 195, 253);
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 5px;
+          text-align: left;
+        }
+        </style>
+<table style="width:20%">
+    <tr>
+        <th>Hora(s)</th>
+    </tr>
+        <th>Minuto(s)</th>
+    </tr>
+        <th>Segundo(s)</th>
+    </tr>
+</table>
+
+    <form action="/cgi-bin/time.py" method = "POST" >
+        O valor que você deseja converter é: <input type="number" name="ValorTempo"><br>  
+        A conversão que você deseja fazer é de:
+         <input type = "checkbox" name = "Tempo1" value = "Hora"> Hora(s)
+         <input type = "checkbox" name = "Tempo1" value = "Minuto"> Minuto(s)
+         <input type = "checkbox" name = "Tempo1" value = "Segundo"> Segundo(s)
+         <br><br>
+        Para: 
+         <input type = "checkbox" name = "Tempo2" value = "Hora"> Hora(s)
+         <input type = "checkbox" name = "Tempo2" value = "Minuto"> Minuto(s)
+         <input type = "checkbox" name = "Tempo2" value = "Segundo"> Segundo(s)<br>
+         <input type = "submit" value = "Confirmar">
+     
+     </form>
+     </body>
+     </html>
